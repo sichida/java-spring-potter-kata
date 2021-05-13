@@ -59,4 +59,37 @@ $ mvn clean package
 
 In order to start quickly, Swagger UI has been pre-configured and a REST operation is ready to be used.
 You can navigate to [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) to
-see the result.
+see the result after running the command `mvn spring-boot:run`.
+
+```shell
+$ mvn clean package spring-boot:run
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building potter-kata 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[...]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.5)
+
+INFO 36957 --- [  restartedMain] k.r.potter.PotterKataApplication         : Starting PotterKataApplication using Java 11.0.11 on XXX with PID 36957 (java-spring-potter-kata/target/classes started by XXX in /java-spring-potter-kata)
+INFO 36957 --- [  restartedMain] k.r.potter.PotterKataApplication         : No active profile set, falling back to default profiles: default
+INFO 36957 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO 36957 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO 36957 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+INFO 36957 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+INFO 36957 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+INFO 36957 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+INFO 36957 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1637 ms
+INFO 36957 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+INFO 36957 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+INFO 36957 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+INFO 36957 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+INFO 36957 --- [  restartedMain] k.r.potter.PotterKataApplication         : Started PotterKataApplication in 3.505 seconds (JVM running for 4.017)
+```
