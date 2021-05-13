@@ -4,12 +4,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * <p>
- *
- * @author shoun
- * @since 13/05/2021
- */
 @Getter
 @Setter
 @Builder
